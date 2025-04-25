@@ -15,14 +15,14 @@ if (localStorage.getItem("notes")) {
 function addNote() {
 
   if (titleInput.value == "") {
-    swal({
+    Swal.fire({
       icon: "error",
-      title: "Please Enter Your Title",
-    })
+      title: "Enter note's title !"
+    });
   } else if (contentInput.value == "") {
-    swal({
+    Swal.fire({
       icon: "error",
-      title: "Please Enter Your Content",
+      title: "Enter note's content !"
     });
   } else {
     var note = {

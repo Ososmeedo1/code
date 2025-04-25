@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Code</title>
+</head>
+
+<body>
+  <nav class="bg-primary pt-2">
+    <div class="name container">
+      <h1>Notes</h1>
+    </div>
+  </nav>
+
+  <div class="container mt-5 pt-5 w-75">
+
+    <label for="titleInput" class="my-3">Title</label>
+    <input type="text" id="titleInput" class="form-control mb-5">
+
+    <label for="contentInput" class="my-3">Content</label>
+    <input type="text" id="contentInput" class="form-control mb-5">
+
+    <div class="search">
+      <input type="text" onkeyup="searchByTitle(this.value)" id="searchTitleInput" placeholder="Search By Title" class="form-control">
+      <input type="text" onkeyup="searchByContent(this.value)" id="searchContentInput" placeholder="Search By Content" class="form-control">
+    </div>
+
+    <div class="submit text-center">
+      <button class="btn btn-primary w-25" onclick="addNote()" id="addBtn">Add</button>
+      <button class="btn btn-warning w-25 d-none" onclick="updateNote()" id="updateBtn">Update</button>
+    </div>
+
+    
+
+  </div>
+
+  <div class="notes py-5 mt-5">
+    <div class="container">
+      <div class="row g-3" id="rowDisplay">
+        
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

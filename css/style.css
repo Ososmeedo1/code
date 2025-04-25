@@ -1,0 +1,33 @@
+
+
+body {
+  background-color: #323232;
+  position: relative;
+}
+
+nav .name h1 {
+  color: #fff;
+  font-family: "Handlee", cursive;
+}
+
+label {
+  font-size: 2rem;
+  color: #fff;
+  font-family: monospace;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.search {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 15%;
+}
